@@ -1,5 +1,10 @@
 
 
+<!-- insert gif -->
+![Alt Text](gif.gif)
+
+
+
 ### program startup:
 
 ```cs
