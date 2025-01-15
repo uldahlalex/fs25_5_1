@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Animated Accordion</title>
+    <script src="
+https://cdn.jsdelivr.net/npm/postcss@8.5.1/lib/postcss.min.js
+"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,245 +27,219 @@
 </head>
 
 <body class="relative font-inter antialiased">
-
     <main class="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden">
         <div class="w-full max-w-2xl mx-auto px-4 md:px-6 py-24">
+            <div class="flex justify-between">            <h1 class="text-2xl font-bold text-slate-900 mb-4">Lessons</h1>
 
-            <h1 class="text-2xl font-bold text-slate-900 mb-4">FAQs</h1>
+            <div x-data="{ 
+            audio: new Audio('https://audio.jukehost.co.uk/xmu7qnkFBjWuKOZ1oAAKrgdvwlmjYdzZ'),
+            playing: false
+        }">
+                <button @click="playing ? audio.pause() : audio.play(); playing = !playing"
+                    class="px-4 py-2 rounded-lg flex border items-center gap-2">Play fullstack anthem!
 
-            <!-- Accordion component -->
-            <div class="divide-y divide-slate-200">
-                <!-- Accordion item -->
-                <div x-data="{ expanded: false }" class="py-2">
-                    <h2>
-                        <button
-                            id="faqs-title-01"
-                            type="button"
-                            class="flex items-center justify-between w-full text-left font-semibold py-2"
-                            @click="expanded = !expanded"
-                            :aria-expanded="expanded"
-                            aria-controls="faqs-text-01"
-                        >
-                            <span>What are the advantages of your service?</span>
-                            <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div
-                        id="faqs-text-01"
-                        role="region"
-                        aria-labelledby="faqs-title-01"
-                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
-                        >
-                        <div class="overflow-hidden">
-                            
-                          <iframe src="https://uldahlalex.github.io/fs25_5_1/" width="100%" height="500px"></iframe>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion item -->
-                <div x-data="{ expanded: false }" class="py-2">
-                    <h2>
-                        <button
-                            id="faqs-title-02"
-                            type="button"
-                            class="flex items-center justify-between w-full text-left font-semibold py-2"
-                            @click="expanded = !expanded"
-                            :aria-expanded="expanded"
-                            aria-controls="faqs-text-02"
-                        >
-                            <span>Are there any fees or commissions in addition to the monthly subscription?</span>
-                            <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div
-                        id="faqs-text-02"
-                        role="region"
-                        aria-labelledby="faqs-title-02"
-                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
-                        >
-                        <div class="overflow-hidden">
-                            <p class="pb-3">
-                                If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-                <!-- Accordion item -->
-                <div x-data="{ expanded: false }" class="py-2">
-                    <h2>
-                        <button
-                            id="faqs-title-03"
-                            type="button"
-                            class="flex items-center justify-between w-full text-left font-semibold py-2"
-                            @click="expanded = !expanded"
-                            :aria-expanded="expanded"
-                            aria-controls="faqs-text-03"
-                        >
-                            <span>You really don't charge per user? Why not?</span>
-                            <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div
-                        id="faqs-text-03"
-                        role="region"
-                        aria-labelledby="faqs-title-03"
-                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
-                        >
-                        <div class="overflow-hidden">
-                            <p class="pb-3">
-                                If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-                <!-- Accordion item -->
-                <div x-data="{ expanded: true }" class="py-2">
-                    <h2>
-                        <button
-                            id="faqs-title-04"
-                            type="button"
-                            class="flex items-center justify-between w-full text-left font-semibold py-2"
-                            @click="expanded = !expanded"
-                            :aria-expanded="expanded"
-                            aria-controls="faqs-text-04"
-                        >
-                            <span>What happens when I go over my monthly active limit?</span>
-                            <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div
-                        id="faqs-text-04"
-                        role="region"
-                        aria-labelledby="faqs-title-04"
-                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
-                        >
-                        <div class="overflow-hidden">
-                            <p class="pb-3">
-                                If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-                <!-- Accordion item -->
-                <div x-data="{ expanded: false }" class="py-2">
-                    <h2>
-                        <button
-                            id="faqs-title-05"
-                            type="button"
-                            class="flex items-center justify-between w-full text-left font-semibold py-2"
-                            @click="expanded = !expanded"
-                            :aria-expanded="expanded"
-                            aria-controls="faqs-text-05"
-                        >
-                            <span>Can your service help me understand how to work with my product?</span>
-                            <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div
-                        id="faqs-text-05"
-                        role="region"
-                        aria-labelledby="faqs-title-05"
-                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
-                        >
-                        <div class="overflow-hidden">
-                            <p class="pb-3">
-                                If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-                <!-- Accordion item -->
-                <div x-data="{ expanded: false }" class="py-2">
-                    <h2>
-                        <button
-                            id="faqs-title-06"
-                            type="button"
-                            class="flex items-center justify-between w-full text-left font-semibold py-2"
-                            @click="expanded = !expanded"
-                            :aria-expanded="expanded"
-                            aria-controls="faqs-text-06"
-                        >
-                            <span>Which third-party application do you integrate with?</span>
-                            <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div
-                        id="faqs-text-06"
-                        role="region"
-                        aria-labelledby="faqs-title-06"
-                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
-                        >
-                        <div class="overflow-hidden">
-                            <p class="pb-3">
-                                If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-                <!-- Accordion item -->
-                <div x-data="{ expanded: false }" class="py-2">
-                    <h2>
-                        <button
-                            id="faqs-title-07"
-                            type="button"
-                            class="flex items-center justify-between w-full text-left font-semibold py-2"
-                            @click="expanded = !expanded"
-                            :aria-expanded="expanded"
-                            aria-controls="faqs-text-07"
-                        >
-                            <span>I have another question!</span>
-                            <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div
-                        id="faqs-text-07"
-                        role="region"
-                        aria-labelledby="faqs-title-07"
-                        class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
-                        >
-                        <div class="overflow-hidden">
-                            <p class="pb-3">
-                                If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
-                            </p>
-                        </div>
-                    </div>
-                </div>                                                                                                
+                </button>
             </div>
-            <!-- End: Accordion component -->
 
+            </div>
+
+            <div class="divide-y divide-slate-200" x-data="{
+                items: [
+              
+{
+    url: 'https://uldahlalex.github.io/fs25_5_1/',
+    title: 'Week 5, Wednesday: Intro To WebSockets',
+    week: 5,
+    date: '2025-01-29'
+},
+{
+    url: '',
+    title: 'Week 5, Friday: Event Handlers & Organizing Communication',
+    week: 5,
+    date: '2025-01-31'
+},
+{
+    url: '',
+    title: 'Week 6, Wednesday: Stateful Server Apps',
+    week: 6,
+    date: '2025-02-05'
+},
+{
+    url: '',
+    title: 'Week 6, Friday: Testing WebSocket APIs',
+    week: 6,
+    date: '2025-02-07'
+},
+{
+    url:'',
+    title: 'Week 7: Winter Holiday',
+    week: 7
+},
+{
+    url:'',
+    title: 'Week 8, Wednesday: ',
+    week: 8,
+    date: '2025-02-19'
+},
+{
+    url:'',
+    title: 'Week 8, Friday: ',
+    week: 8,
+    date: '2025-02-21'
+},
+{
+    url:'',
+    title: 'Week 9, Wednesday: ',
+    week: 9,
+    date: '2025-02-26'
+},
+{
+    url:'',
+    title: 'Week 9, Friday: ',
+    week: 9,
+    date: '2025-02-28'
+},
+{
+    url:'',
+    title: 'Week 10, Wednesday: ',
+    week: 10,
+    date: '2025-03-05'
+},
+{
+    url:'',
+    title: 'Week 10, Friday: ',
+    week: 10,
+    date: '2025-03-07'
+},
+{
+    url:'',
+    title: 'Week 11, Wednesday: ',
+    week: 11,
+    date: '2025-03-12'
+},
+{
+    url:'',
+    title: 'Week 11, Friday: ',
+    week: 11,
+    date: '2025-03-14'
+},
+{
+    url:'',
+    title: 'Week 12: Sustainability Week',
+    week: 12
+},
+{
+    url:'',
+    title: 'Week 13, Wednesday: ',
+    week: 13,
+    date: '2025-03-26'
+},
+{
+    url:'',
+    title: 'Week 13, Friday: ',
+    week: 13,
+    date: '2025-03-28'
+},
+{
+    url:'',
+    title: 'Week 14, Wednesday: ',
+    week: 14,
+    date: '2025-04-02'
+},
+{
+    url:'',
+    title: 'Week 14, Friday: ',
+    week: 14,
+    date: '2025-04-04'
+},
+{
+    url:'',
+    title: 'Week 15, Wednesday: ',
+    week: 15,
+    date: '2025-04-09'
+},
+{
+    url:'',
+    title: 'Week 15, Friday: Exam Project Commencement!',
+    week: 15,
+    date: '2025-04-11'
+}
+                ],
+                expanded: null,
+                getCurrentLesson() {
+        const now = new Date();
+        const sortedLessons = [...this.items].sort((a, b) => new Date(b.date) - new Date(a.date));
+        return sortedLessons.find(lesson => new Date(lesson.date) <= now)?.date || null;
+    }
+            }">
+
+
+                <template x-for="(item, index) in items" :key="index">
+                    <div class="py-2 rounded-xl p-2"
+                        :class="item.week === 7 || item.week === 12 ? 'bg-neutral-200' : 'bg-white'">
+                        <h2>
+                            <button :id="'faqs-title-' + index" type="button"
+                                class="flex items-center justify-between w-full text-left font-semibold py-2"
+                                @click="expanded = expanded === index ? null : index"
+                                :aria-expanded="expanded === index" :aria-controls="'faqs-text-' + index">
+                                <span>
+                                    <template x-if="item.date === getCurrentLesson()">
+                                        <span class="px-2 py-1 text-xl font-medium text-white rounded-full">👉</span>
+                                    </template>
+                                    <span x-text="item.title">
+
+                                    </span>
+
+                                    <template x-if="item.date === getCurrentLesson()">
+                                        <span class="px-2 py-1 text-xl font-medium text-white rounded-full">👈</span>
+                                    </template>
+                                </span>
+
+
+                                <svg class="fill-indigo-500 shrink-0 ml-8" width="16" height="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="16" height="2" rx="1"
+                                        class="transform origin-center transition duration-200 ease-out"
+                                        :class="{'!rotate-180': expanded === index}" />
+                                    <rect y="7" width="16" height="2" rx="1"
+                                        class="transform origin-center rotate-90 transition duration-200 ease-out"
+                                        :class="{'!rotate-180': expanded === index}" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div :id="'faqs-text-' + index" role="region" :aria-labelledby="'faqs-title-' + index"
+                            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                            :class="expanded === index ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                            <div class="overflow-hidden">
+                                <template x-if="item.url && item.week != 7 && item.week != 12">
+                                    <iframe :src="item.url" width="100%" height="500px"></iframe>
+                                </template>
+                                <template x-if="!item.url && item.week != 7 && item.week != 12">
+                                    <div class="flex items-center justify-center h-32 rounded-lg">
+                                        <p class="text-lg text-gray-500 font-medium">Lesson content not public yet</p>
+                                    </div>
+                                </template>
+                                <template x-if="item.week == 7">
+                                    <div class="flex items-center justify-center h-32 rounded-lg">
+                                        <p class="text-lg text-gray-500 font-medium">Nothing scheduled for week 7: Go
+                                            touch snow❄️</p>
+                                    </div>
+                                </template>
+                                <template x-if="item.week == 12">
+                                    <div class="flex items-center justify-center h-32 rounded-lg">
+                                        <p class="text-lg text-gray-500 font-medium">Course changes may occur during
+                                            week 12: Please stay tuned...</p>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
         </div>
     </main>
-
-
 </body>
+
+
 
 </html>
