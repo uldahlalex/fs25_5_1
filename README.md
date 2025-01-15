@@ -9,3 +9,8 @@
 - 09:30: Exercise A walkthrough in class
 - 10:00: Exercise B + C
 
+### Exercises
+
+#### A: First WebSocket API
+
+(Exericse content coming soon...)
