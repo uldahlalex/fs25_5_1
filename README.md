@@ -1,6 +1,6 @@
 # WELCOME TO FULLSTACK!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G5b1Zd367sA?si=RxfcLd0Zdc_pokbO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include youtube.html %}
 
 ### Today's Agenda
 

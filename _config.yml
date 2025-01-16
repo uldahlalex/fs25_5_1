@@ -3,3 +3,4 @@ theme: jekyll-theme-primer
 markdown: GFM
 kramdown:
   input: GFM
+  parse_block_html: true
