@@ -2,6 +2,7 @@
 
 
 [![Exercise A: First WebSocket API](https://img.youtube.com/vi/G5b1Zd367sA/0.jpg)](https://www.youtube.com/watch?v=G5b1Zd367sA)
+
 Click above image to go to today's vid ☝️
 
 ### Today's Agenda
@@ -19,7 +20,7 @@ Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *
 <details>
     <summary>Exercise A: First WebSocket API (Stateless with "echo")</summary>
 
-<div style="margin-left: 20px; box-shadow: 10px 10px 10px black;">
+<div style="margin: 20px; padding: 5px; box-shadow: 10px 10px 10px black;">
 
 #### Difficulty: ★☆☆☆☆
 
