@@ -14,7 +14,6 @@ Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *
 
 ### Exercises
 
-
 <details>
     <summary>Exercise A: First WebSocket API (Stateless with "echo")</summary>
 
@@ -22,20 +21,24 @@ Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *
 
 #### Difficulty: ★☆☆☆☆
 
-#### Task: 
+#### Task:
 
 Create a .NET WebSocket API with Fleck.
-We aim to make the most basic WS server: "Stateless" (API doesn't retain data) and only "echos" client messages (gives back what it receives).
+We aim to make the most basic WS server: "Stateless" (API doesn't retain data) and only "echos" client messages (gives
+back what it receives).
 
 ![img.png](assets/pm_hello_world.png)
 
 #### Instructions:
+
 Install "Fleck" as Nuget to a .NET Web project.
 
 You may follow the "Example" from the README.md here:
 https://github.com/statianzo/Fleck
 
-*Tip: Add some logic to "stall" the application after starting the server. Otherwise, it will just stop once the end of file is reached. You may use this snippet:*
+*Tip: Add some logic to "stall" the application after starting the server. Otherwise, it will just stop once the end of
+file is reached. You may use this snippet:*
+
 ```csharp
 Console.ReadLine();
 ```
@@ -48,7 +51,8 @@ We need a client to use the WS API now. Use **both** ways described below to tes
 
 You can Download Postman Desktop client here (the browser version doesn't have WebSocket capability):
 
-*Tip: You can download my Fullstack2025 Postman Workspace. You can find prepared Websocket connections + messages in "fs_5_1"*
+*Tip: You can download my Fullstack2025 Postman Workspace. You can find prepared Websocket connections + messages in "
+fs_5_1"*
 
 Upon success, you should be able to connect a client and get an echo response from the API upon sending a message:
 
@@ -58,46 +62,57 @@ Upon success, you should be able to connect a client and get an echo response fr
 
 Open this file: https://github.com/uldahlalex/fs25_5_1/blob/master/ExerciseASolution/client-app.html
 with your web browser.
-Now go to the network tab and inspect "WS" traffic. You should be able to see messages going both ways when chatting with the API.
+Now go to the network tab and inspect "WS" traffic. You should be able to see messages going both ways when chatting
+with the API.
 
 ![assets/browser.png](assets/browser.png)
 
 </div>
 
-
-
 ###
 
-
 </details>
+
+______
+
 
 <details>
     <summary>Exercise B: WebSocket API with State + Broadcasting</summary>
 
-<div style="margin-left: 20px; box-shadow: 10px 10px 10px black;">
+<div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
-#### Task: 
+
+#### Difficulty: ★⯪☆☆☆
+
+
+#### Task:
 
 </div>
 </details>
 
+__________
 
 <details>
     <summary>Exercise C: A Proper Client App For The API</summary>
 
-<div style="margin-left: 20px; box-shadow: 10px 10px 10px black;">
 
-#### Task: Instead of using Postman 
+
+<div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
+
+#### Difficulty: ★★☆☆☆
+
+
+#### Task:
 
 </div>
 </details>
 
-
+_________
 
 <details>
     <summary>Food for thought</summary>
 
-<div style="margin-left: 20px; box-shadow: 10px 10px 10px black;">
+<div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
 #### Questions
 
