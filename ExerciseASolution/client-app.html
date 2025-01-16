@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+
+        .input-container {
+            display: flex;
+            gap: 10px;
+        }
+        #messageInput {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 16px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #status {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .connected {
+            background: #d4edda;
+            color: #155724;
+        }
+        .disconnected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+<div id="status" class="disconnected">Disconnected</div>
+<div class="input-container">
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+    let ws;
+    let messageInput = document.getElementById('messageInput');
+    let statusDiv = document.getElementById('status');
+
+    function connect() {
+        ws = new WebSocket('ws://localhost:8181');
+
+        ws.onopen = function() {
+            statusDiv.textContent = 'Connected';
+            statusDiv.className = 'connected';
+        };
+
+        ws.onclose = function() {
+            statusDiv.textContent = 'Disconnected - Trying to reconnect...';
+            statusDiv.className = 'disconnected';
+            setTimeout(connect, 1000); // Attempt to reconnect after 1 second
+        };
+
+      
+
+        ws.onerror = function(error) {
+            console.error('WebSocket error:', error);
+        };
+    }
+
+    function sendMessage() {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+            const message = messageInput.value.trim();
+            if (message) {
+                ws.send(message);
+                messageInput.value = '';
+            }
+        }
+    }
+
+    // Handle Enter key in input field
+    messageInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            sendMessage();
+        }
+    });
+
+    // Initial connection
+    connect();
+</script>
+</body>
+</html>
