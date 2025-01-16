@@ -85,7 +85,15 @@ ______
 #### Difficulty: ★⯪☆☆☆
 
 
-#### Task:
+#### Task: 
+When connecting to the API, it should now store the IWebSocketConnection in memory.
+When a connection sends a message, loop through all connections and send the messaage to each connection.
+
+#### Testing it:
+
+Connect 2 clients (or more) to the same sever and let one client broadcast to others:
+
+![img](assets/broadcast.png)
 
 </div>
 </details>
@@ -103,6 +111,8 @@ __________
 
 
 #### Task:
+
+
 
 </div>
 </details>
