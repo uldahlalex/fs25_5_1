@@ -20,6 +20,8 @@ Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *
 
 <div style="margin-left: 20px; box-shadow: 10px 10px 10px black;">
 
+#### Difficulty: ★☆☆☆☆
+
 #### Task: 
 
 Create a .NET WebSocket API with Fleck.
@@ -54,9 +56,11 @@ Upon success, you should be able to connect a client and get an echo response fr
 
 **Second way: Simple browser app using a single HTML file with JS** (observational exercise)
 
-Use this file: (direct remote repo file link) with your web browser.
+Open this file: https://github.com/uldahlalex/fs25_5_1/blob/master/ExerciseASolution/client-app.html
+with your web browser.
 Now go to the network tab and inspect "WS" traffic. You should be able to see messages going both ways when chatting with the API.
-![assets/browser.png](img.png)
+
+![assets/browser.png](assets/browser.png)
 
 </div>
 
