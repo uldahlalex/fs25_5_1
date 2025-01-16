@@ -1,5 +1,6 @@
-markdown: kramdown
+title: ""
+theme: jekyll-theme-primer
+markdown: GFM
 kramdown:
   input: GFM
-  hard_wrap: false
   parse_block_html: true
