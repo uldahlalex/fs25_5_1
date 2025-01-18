@@ -14,10 +14,17 @@ Click above image to go to today's vid ☝️
 [//]: # (github repo link uldahlalex/fs25_5_1)
 Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *(Includes solutions for the exercises)*
 
+### Tooday's topics:
+
+- WebSockets (protocol, client-server communication)
+- Fleck .NET library
+- WebSocket clients (React, built-in browser client, Postman Desktop client)
+
 ### Exercises
 
 
-<!-- #region -->
+<!-- #region ex A -->
+
 
 
 
@@ -82,9 +89,15 @@ with the API.
 </div>
 
 
-
 <!-- #endregion -->
+
 ______
+
+
+<!-- #region ex B -->
+
+
+
 
 <details>
     <summary>
@@ -107,8 +120,16 @@ Connect 2 clients (or more) to the same sever and let one client broadcast to ot
 
 </div>
 </details>
+asd
+
+
+
+
+<!-- #endregion -->
 
 __________
+
+<!-- #region ex C -->
 
 <details>
     <summary>Exercise C: A Proper Client App For The API</summary>
@@ -123,16 +144,14 @@ __________
 </div>
 </details>
 
+<!-- #endregion ex C -->
 _________
 
-<details>
-    <summary>Food for thought</summary>
 
-<div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
-### Questions
+### Exam Questions
+
+
 
 ### Additional literature & references
 
-</div>
-</details>
