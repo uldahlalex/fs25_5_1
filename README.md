@@ -1,5 +1,4 @@
-# WELCOME TO FULLSTACK!
-
+# WELCOME TO FULLSTACK
 
 [![Exercise A: First WebSocket API](https://img.youtube.com/vi/G5b1Zd367sA/0.jpg)](https://www.youtube.com/watch?v=G5b1Zd367sA)
 
@@ -17,6 +16,12 @@ Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *
 
 ### Exercises
 
+
+<!-- #region -->
+
+
+
+<div>
 <details>
     <summary>Exercise A: First WebSocket API (Stateless with "echo")</summary>
 
@@ -24,7 +29,7 @@ Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *
 
 #### Difficulty: ★☆☆☆☆
 
-#### Task:
+#### Task
 
 Create a .NET WebSocket API with Fleck.
 We aim to make the most basic WS server: "Stateless" (API doesn't retain data) and only "echos" client messages (gives
@@ -32,12 +37,12 @@ back what it receives).
 
 ![img.png](assets/pm_hello_world.png)
 
-#### Instructions:
+#### Instructions
 
 Install "Fleck" as Nuget to a .NET Web project.
 
 You may follow the "Example" from the README.md here:
-https://github.com/statianzo/Fleck
+<https://github.com/statianzo/Fleck>
 
 *Tip: Add some logic to "stall" the application after starting the server. Otherwise, it will just stop once the end of
 file is reached. You may use this snippet:*
@@ -46,7 +51,7 @@ file is reached. You may use this snippet:*
 Console.ReadLine();
 ```
 
-### How to test it works:
+**How to test it works**
 
 We need a client to use the WS API now. Use **both** ways described below to test your API (manual testing).
 
@@ -63,7 +68,7 @@ Upon success, you should be able to connect a client and get an echo response fr
 
 **Second way: Simple browser app using a single HTML file with JS** (observational exercise)
 
-Open this file: https://github.com/uldahlalex/fs25_5_1/blob/master/ExerciseASolution/client-app.html
+Open this file: <https://github.com/uldahlalex/fs25_5_1/blob/master/ExerciseASolution/client-app.html>
 with your web browser.
 Now go to the network tab and inspect "WS" traffic. You should be able to see messages going both ways when chatting
 with the API.
@@ -72,27 +77,29 @@ with the API.
 
 </div>
 
-###
 
 </details>
+</div>
 
+
+
+<!-- #endregion -->
 ______
 
-
 <details>
-    <summary>Exercise B: WebSocket API with State + Broadcasting</summary>
+    <summary>
+    Exercise B: WebSocket API with State + Broadcasting</summary>
 
 <div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
-
 #### Difficulty: ★⯪☆☆☆
 
+#### Task
 
-#### Task: 
 When connecting to the API, it should now store the IWebSocketConnection in memory.
 When a connection sends a message, loop through all connections and send the messaage to each connection.
 
-#### Testing it:
+#### Testing it
 
 Connect 2 clients (or more) to the same sever and let one client broadcast to others:
 
@@ -106,16 +113,12 @@ __________
 <details>
     <summary>Exercise C: A Proper Client App For The API</summary>
 
-
-
 <div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
 #### Difficulty: ★★☆☆☆
 
 
-#### Task:
-
-
+#### Task
 
 </div>
 </details>
@@ -127,10 +130,9 @@ _________
 
 <div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
-#### Questions
+### Questions
 
-#### Additional literature & references
+### Additional literature & references
 
 </div>
 </details>
-
