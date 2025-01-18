@@ -148,10 +148,32 @@ __________
 _________
 
 
+<!-- #region summary -->
 
-#### Exam Questions Examples For Today's Topics
+<!-- <details>
+    <summary>TL;DR of today's lesson</summary>
+
+<div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
+
+HTTP REST Api's only provide request-response pattern in client-server. It means you cant do things such as the following:
+- Broadcasting (server sending data to many clients at once)
+- Keeping client connection state
+
+That's why we have to use a diffferent protocol. Fleck is a library that allows us to establish websocket connections between clients and send messages to these.
+
+However, WebSockets are without many of the REST conventions. 
+
+</div>
+</details> -->
+
+<!-- #endregion ex C -->
+_________
 
 
+### Exam Questions Examples For Today's Topics
+- How is the communication with WebSockets versus HTTP REST?
+- What does it mean when a server application is stateful versus stateless?
+- 
 
-#### Additional literature & references
+### Additional literature & references
 
