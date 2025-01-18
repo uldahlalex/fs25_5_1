@@ -1,4 +1,4 @@
-# WELCOME TO FULLSTACK
+# 💥WELCOME TO FULLSTACK 2025💥
 
 [![Exercise A: First WebSocket API](https://img.youtube.com/vi/G5b1Zd367sA/0.jpg)](https://www.youtube.com/watch?v=G5b1Zd367sA)
 
@@ -120,7 +120,7 @@ Connect 2 clients (or more) to the same sever and let one client broadcast to ot
 
 </div>
 </details>
-asd
+
 
 
 
@@ -149,9 +149,9 @@ _________
 
 
 
-### Exam Questions
+#### Exam Questions Examples For Today's Topics
 
 
 
-### Additional literature & references
+#### Additional literature & references
 
