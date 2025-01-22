@@ -125,7 +125,7 @@ Connect 2 clients (or more) to the same sever and let one client broadcast to ot
 
 
 
-<!-- #endregion -->
+<!-- #endregion B -->
 
 __________
 
@@ -136,10 +136,12 @@ __________
 
 <div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
-#### Difficulty: ★★☆☆☆
-
 
 #### Task
+
+Make a small React+Typescript+Vite application where you use the react-use-websocket npm package to facilitate connection with the C# WebSocket API: https://www.npmjs.com/package/react-use-websocket
+
+**There is no singluar end-goal to this exercise: It is just about becoming familiar with the technologies and making observations. Be creative with this one** 
 
 </div>
 </details>
@@ -148,32 +150,13 @@ __________
 _________
 
 
-<!-- #region summary -->
-
-<!-- <details>
-    <summary>TL;DR of today's lesson</summary>
-
-<div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
-
-HTTP REST Api's only provide request-response pattern in client-server. It means you cant do things such as the following:
-- Broadcasting (server sending data to many clients at once)
-- Keeping client connection state
-
-That's why we have to use a diffferent protocol. Fleck is a library that allows us to establish websocket connections between clients and send messages to these.
-
-However, WebSockets are without many of the REST conventions. 
-
-</div>
-</details> -->
-
-<!-- #endregion ex C -->
-_________
 
 
 ### Exam Questions Examples For Today's Topics
 - How is the communication with WebSockets versus HTTP REST?
 - What does it mean when a server application is stateful versus stateless?
-- 
+- (...content is to be published soon)
 
 ### Additional literature & references
 
+(...content is to be published soon)
