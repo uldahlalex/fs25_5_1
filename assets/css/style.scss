@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$main-font: Georgia, Times, "Times New Roman", serif;
+$content-width: 800px;
+
+// Base styles
+body {
+  font-family: $main-font;
+  line-height: 1.6;
+}
+
+header {
+  display: none !important;
+}
+
+footer {
+  display: none !important;
+}
