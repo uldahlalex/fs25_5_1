@@ -157,4 +157,9 @@ _________
 - Explain some differences between as stateful and a stateless server application
 
 ### Additional literature & references
-- Postman WebSocket Docs: https://learning.postman.com/docs/sending-requests/websocket/websocket-overview/
+- Postman WebSocket Guide: https://learning.postman.com/docs/sending-requests/websocket/websocket-overview/
+- The WebSocket C# server framework we're using: https://github.com/statianzo/Fleck
+- A React Hook for WebSocket communication: https://www.npmjs.com/package/react-use-websocket
+- High quality but longer read about WebSockets by Mozilla: 
+    - Client: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications
+    - Server: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers
