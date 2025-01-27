@@ -12,7 +12,7 @@ Click above image to go to today's vid ☝️
 - 10:00: Exercise B + C
 
 [//]: # (github repo link uldahlalex/fs25_5_1)
-Today's remote repo is located [here](https://github.com/uldahlalex/fs25_5_1). *(Includes solutions for the exercises)*
+Today's remote repo is located: https://github.com/uldahlalex/fs25_5_1 (Includes solutions for the exercises)*
 
 ### Tooday's topics:
 
@@ -157,5 +157,4 @@ _________
 - Explain some differences between as stateful and a stateless server application
 
 ### Additional literature & references
-
-(...content is to be published soon)
+- Postman WebSocket Docs: https://learning.postman.com/docs/sending-requests/websocket/websocket-overview/
