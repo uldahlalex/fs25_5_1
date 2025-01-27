@@ -152,10 +152,9 @@ _________
 
 
 
-### Exam Questions Examples For Today's Topics
-- How is the communication with WebSockets versus HTTP REST?
-- What does it mean when a server application is stateful versus stateless?
-- (...content is to be published soon)
+### Exam Dialogue Examples For Today's Topics
+- Explain some differences between using HTTP REST and WebSockets
+- Explain some differences between as stateful and a stateless server application
 
 ### Additional literature & references
 
