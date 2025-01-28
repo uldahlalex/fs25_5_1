@@ -1,20 +1,20 @@
 # 💥WELCOME TO FULLSTACK 2025💥
 
-[![Exercise A: First WebSocket API](https://img.youtube.com/vi/G5b1Zd367sA/0.jpg)](https://www.youtube.com/watch?v=G5b1Zd367sA)
+![img](https://img.youtube.com/vi/G5b1Zd367sA/0.jpg)
 
-Click above image to go to today's vid ☝️
+Link to today's video: `https://www.youtube.com/watch?v=G5b1Zd367sA`
 
 ### Today's Agenda
 
 - 08:15: Intro to WebSockets
-- 08:45: Exercise A: First WebSocket API
-- 09:30: Exercise A (& maybe B) walkthrough in class
-- 10:00: Exercise B + C
+- 08:45: Exercise A & B
+- 09:30: Exercise A & B walkthrough in class
+- 10:00 - 11:30: Workshop
 
 
 [//]: # (github repo link uldahlalex/fs25_5_1)
 Today's remote repo is located: *(Includes solutions for the exercises)*
-<a href="https://github.com/uldahlalex/fs25_5_1" target="_blank" rel="noopener noreferrer">https://github.com/uldahlalex/fs25_5_1</a>
+`https://github.com/uldahlalex/fs25_5_1`
 
 ### Tooday's topics:
 
@@ -36,8 +36,6 @@ Today's remote repo is located: *(Includes solutions for the exercises)*
 
 <div style="margin: 20px; padding: 5px; box-shadow: 10px 10px 10px black;">
 
-#### Difficulty: ★☆☆☆☆
-
 #### Task
 
 Create a .NET WebSocket API with Fleck.
@@ -51,7 +49,7 @@ back what it receives).
 Install "Fleck" as Nuget to a .NET Web project.
 
 You may follow the "Example" from the README.md here:
-<https://github.com/statianzo/Fleck>
+`https://github.com/statianzo/Fleck`
 
 *Tip: Add some logic to "stall" the application after starting the server. Otherwise, it will just stop once the end of
 file is reached. You may use this snippet:*
@@ -77,7 +75,7 @@ Upon success, you should be able to connect a client and get an echo response fr
 
 **Second way: Simple browser app using a single HTML file with JS** (observational exercise)
 
-Open this file: <https://github.com/uldahlalex/fs25_5_1/blob/master/ExerciseASolution/client-app.html>
+Open this file: `https://github.com/uldahlalex/fs25_5_1/blob/master/ExerciseASolution/client-app.html`
 with your web browser.
 Now go to the network tab and inspect "WS" traffic. You should be able to see messages going both ways when chatting
 with the API.
@@ -107,7 +105,6 @@ ______
 
 <div style="margin: 20px; padding: 5px;  box-shadow: 10px 10px 10px grey;">
 
-#### Difficulty: ★⯪☆☆☆
 
 #### Task
 
@@ -141,7 +138,7 @@ __________
 
 #### Task
 
-Make a small React+Typescript+Vite application where you use the react-use-websocket npm package to facilitate connection with the C# WebSocket API: https://www.npmjs.com/package/react-use-websocket
+Make a small React+Typescript+Vite application where you use the react-use-websocket npm package to facilitate connection with the C# WebSocket API: `https://www.npmjs.com/package/react-use-websocket`
 
 **There is no singluar end-goal to this exercise: It is just about becoming familiar with the technologies and making observations. Be creative with this one** 
 
@@ -159,9 +156,11 @@ _________
 - Explain some differences between as stateful and a stateless server application
 
 ### Additional literature & references
-- Postman WebSocket Guide: https://learning.postman.com/docs/sending-requests/websocket/websocket-overview/
-- The WebSocket C# server framework we're using: https://github.com/statianzo/Fleck
-- A React Hook for WebSocket communication: https://www.npmjs.com/package/react-use-websocket
+- Postman WebSocket Guide: `https://learning.postman.com/docs/sending-requests/websocket/websocket-overview/`
+- The WebSocket C# server framework we're using: `https://github.com/statianzo/Fleck`
+- A React Hook for WebSocket communication: `https://www.npmjs.com/package/react-use-websocket`
 - High quality but longer read about WebSockets by Mozilla: 
-    - Client: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications
-    - Server: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers
+    - Client: `https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/` 
+    
+    Writing_WebSocket_client_applications
+    - Server: `https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers`
