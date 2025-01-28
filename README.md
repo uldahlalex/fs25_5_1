@@ -11,8 +11,10 @@ Click above image to go to today's vid ☝️
 - 09:30: Exercise A (& maybe B) walkthrough in class
 - 10:00: Exercise B + C
 
+
 [//]: # (github repo link uldahlalex/fs25_5_1)
-Today's remote repo is located: https://github.com/uldahlalex/fs25_5_1 (Includes solutions for the exercises)*
+Today's remote repo is located: *(Includes solutions for the exercises)*
+<a href="https://github.com/uldahlalex/fs25_5_1" target="_blank" rel="noopener noreferrer">https://github.com/uldahlalex/fs25_5_1</a>
 
 ### Tooday's topics:
 
