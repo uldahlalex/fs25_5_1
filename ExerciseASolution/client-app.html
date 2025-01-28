@@ -61,12 +61,7 @@
             background: #f8f9fa;
         }
 
-        .client-id {
-            color: #666;
-            font-size: 0.85em;
-            margin-right: 8px;
-            font-family: monospace;
-        }
+ 
     </style>
 </head>
 <body>
@@ -82,7 +77,6 @@
     let messageInput = document.getElementById('messageInput');
     let statusDiv = document.getElementById('status');
     let messageBox = document.getElementById('messageBox');
-    let clientId = URL.createObjectURL(new Blob([])).substring(31);
 
     function connect() {
         ws = new WebSocket('ws://localhost:8181');
@@ -102,11 +96,8 @@
             const messageDiv = document.createElement('div');
             messageDiv.className = 'message';
             
-            const idSpan = document.createElement('span');
-            idSpan.className = 'client-id';
-            idSpan.textContent = clientId;
+
             
-            messageDiv.appendChild(idSpan);
             messageDiv.appendChild(document.createTextNode(event.data));
             
             messageBox.appendChild(messageDiv);
